@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Analysys</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/series-label.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<noscript><link rel="stylesheet" href="./css/noscript.css" /></noscript>
+
+
+
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Feel<br> <span> so good</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">HOME</a></li>
+							<li class="submenu">
+								<a href="#">menu</a>
+								<ul>
+									<li><a href="chart.html">Analysys</a></li>
+									<li><a href="list.html">Heavy Line</a></li>
+									<li><a href="list.html">Light line</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									
+								</ul>
+							</li>
+							<li><a href="user.html" class="button primary">LOG IN</a></li>
+						</ul>
+					</nav>
+				</header>
+				<script type="text/javascript">
+
+function chart(){
+Highcharts.chart('container', {
+
+    title: {
+        text: 'Perfume Analysys'
+    },
+
+
+    yAxis: {
+        title: {
+            text: 'Number of maintance'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 1
+        }
+    },
+
+    series: [{
+        name: 'Jo Malone',
+        data: [33934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Diptyque',
+        data: [33990, 43880, 63000, 70000, 90000, 85238, 125566, 165444]
+    }, {
+        name: 'CREED',
+        data: [11744, 17722, 16005, 19771, 20185, 79878, 156465, 189000]
+    }, {
+        name: 'maison Margiela',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'CHANNEL',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+	}, {
+        name: 'Monblanc',
+        data: [null, null, null, 7988, 12169, 15112, 22452, 34400]
+	},{
+        name: 'BLV',
+        data: [40434, 38121, 30282, 32490, 29851, 29742, 24064, 24916]
+	}
+	
+	],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+}		
+</script>
+<style>
+	#container {
+	min-width: 510px;
+	max-width: 1200px;
+	height: 600px;
+	margin: 0 auto
+	}
+
+</style>
+
+				<section id="banner">
+
+					<div class="inner">
+
+						<header>
+							<h2>FEEL</h2>
+						</header>
+						<p>  <strong>What do you want?</strong> 
+						</p>
+						
+
+					</div>
+
+				</section>
+
+			<!-- Main -->
+				<article id="main">
+					<h3 id="logo">The Scent Graph</h3>
+						<section>
+
+					<div>
+						<div id="container" onmousewheel="chart()" >
+
+						</div>
+					</div>
+
+						</section>
+
+				</article>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<header>
+						<h2>FEEL은  <strong>더 당신에게</strong></h2>
+						<p> 다양한 제품들을 준비하도록하겠습니다. </p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="#" onclick="window.scrollTo(0,0)" class="button primary"> 상단으로 </a></li>
+						</ul>
+						비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩)<br>
+						사업자등록번호 : 214-85-24928 <br>
+						(주)비트컴퓨터 서초본원 대표이사 : 조현정 <br>
+						문의 : 02-3486-9600 <br>
+						팩스 : 02-6007-1245 <br>
+						통신판매업 신고번호 : 제 서초-00098호<br>
+						개인정보보호관리책임자 : 최종진
+					</footer>
+
+				</section>
+
+		
+
+		</div>
+
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/jquery.dropotron.min.js"></script>
+			<script src="./js/jquery.scrolly.min.js"></script>
+			<script src="./js/jquery.scrollex.min.js"></script>
+			<script src="./js/browser.min.js"></script>
+			<script src="./js/breakpoints.min.js"></script>
+			<script src="./js/util.js"></script>
+			<script src="./js/main.js"></script>
+
+	</body>
+</html>

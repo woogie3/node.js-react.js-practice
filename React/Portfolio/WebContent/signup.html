@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title> Sign up </title>
+<script type="text/javascript">
+const log = console.log;
+$(function(){
+	$('#id_check').click(function(){
+		 $.ajax({
+                url:'user.jsp',
+				dataType: 'JSON',
+				data: {id:$('#id').val()}, 
+				type: 'get',
+                success:function(data){
+					if(data.check==true){
+						alert('이미 사용중인 아이디입니다.');
+					}else{
+						alert('사용가능한 아이디 입니다.');
+					}
+                },
+                error:function(e){
+                    alert('error '+e)
+                }
+            });
+	});
+});
+
+
+</script>
+
+<style>
+	.error{
+		color: red;
+
+	}
+</style>
+</head>
+<body class="contact is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" >
+					<h1 id="logo"><a href="index.html">Feel<br> <span> so good</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">HOME</a></li>
+							<li class="submenu">
+								<a href="#">menu</a>
+								<ul>
+									<li><a href="chart.html">Analysys</a></li>
+									<li><a href="list.html">Heavy Line</a></li>
+									<li><a href="list.html">Light line</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				
+
+			<!-- Main -->
+				<article id="main">
+					<h3>회원가입</h3>
+
+						<form action="user.jsp" method="GET">
+							<table border="1">
+								<tr>
+								<td> <label for="id">ID</label> </td>
+								<td> <input type="text" id="id" name="id" value=""/>
+									<input type="button" value="ID중복체크" id="id_check" >
+									<br>
+									
+										</td>
+										</tr>	
+											<tr>
+										<td> <label for="pw">PW</label> </td>
+										<td> <input type="password" id="pw" name="pw" value=""/>  </td>
+										</tr>	
+											<tr>
+										<td> <label for="name">이름</label> </td>
+											<td> <input type="text" id="name" name="name" value=""/>  
+											<input type="submit" id="join" value="가입">
+											<input type="reset" value="초기화">
+										</tr>	
+											</td>
+													<tr>
+										
+							
+										<br>	
+										<td colspan="2"> 
+										</td>
+										</tr>	
+										</table>
+										<a href="index.html" class="button primary">home으로</a>
+
+							</form>
+</div>
+
+</body>
+</html>

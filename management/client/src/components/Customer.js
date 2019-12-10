@@ -1,6 +1,3 @@
-//props를 계층적으로 구조화시켜서 구분해서 사용가능하다.
-//jsx문법은 반드시 div같은 태그로 묶어서 사용해야한다.
-
 import React from 'react'; 
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
