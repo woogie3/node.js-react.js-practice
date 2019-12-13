@@ -27,12 +27,12 @@ class CustomerAdd extends React.Component {
       fileName: '',
       open: false
     }
-    this.handleFormSubmit = this.handleFormSubmit.bind(this)
-    this.handleFileChange = this.handleFileChange.bind(this)
-    this.handleValueChange = this.handleValueChange.bind(this)
-    this.addCustomer = this.addCustomer.bind(this)
-    this.handleClickOpen = this.handleClickOpen.bind(this)
-    this.handleClose = this.handleClose.bind(this);
+    // this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    // this.handleFileChange = this.handleFileChange.bind(this)
+    // this.handleValueChange = this.handleValueChange.bind(this)
+    // this.addCustomer = this.addCustomer.bind(this)
+    // this.handleClickOpen = this.handleClickOpen.bind(this)
+    // this.handleClose = this.handleClose.bind(this);
   }
 
   handleFormSubmit(e) {
